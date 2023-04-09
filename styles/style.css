@@ -6,8 +6,8 @@
 
 .background{
     font-family: sans-serif;
-    font-size:2vw;
-    max-width: 100%s;
+    font-size:16px;
+    max-width: 100%;
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -59,7 +59,7 @@ nav a{
     color: white;
     padding-right: 35px;
     font-weight: bold;
-    font-size: 2.2vw;
+    font-size: 2em;
 }
 
 
@@ -67,7 +67,7 @@ nav a{
     text-decoration: underline 0.10em rgba(255, 255, 255, 0);
     transition: text-decoration-color 300ms;
     color:white;
-    font-size:2vw;
+    font-size: 1.8em;
     padding: 0 8px;
 }
 
@@ -82,9 +82,24 @@ nav a{
 }
 
 .social svg{
-    height: 2vw;
+    height: 1.8em;
 }
 
 .social:hover{
     fill:rgb(163, 56, 230);
 }
+
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    .background {
+      font-size: 2.2vw;
+    }
+
+    .logo{
+        padding-right:4.5vw;
+    }
+    .page{
+        padding:1vw;
+    }
+  }
