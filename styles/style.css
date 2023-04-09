@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.background{
+    font-family: sans-serif;
+    font-size:16px;
+    width: 100%s;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color :white;
+    display: grid;
+    place-items:center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+#index{
+    background-image:url("../images/kally-singing.jpg");
+}
+
+#music{
+    background-image:url("../images/kally-tam.jpg");
+}
+#video{
+    background-image:url("../images/kally.jpg");
+}
+#contact{
+    background-image:url("../images/kally-full-band.jpg");
+}
+
+nav{
+    overflow:hidden;
+    background-color: black;
+    padding: 10px 25px;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline;
+    text-align: center;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    padding-right: 35px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+
+.page{
+    text-decoration: underline 0.10em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+    color:white;
+    font-size:1.6em;
+    padding: 0 8px;
+}
+
+.page:hover{
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.social{
+    padding: 5px;
+    fill: white;  
+    float:right; 
+}
+
+.social svg{
+    height: 28px;
+}
+
+.social:hover{
+    fill:rgb(163, 56, 230);
+}
+
+section{
+  
+}
