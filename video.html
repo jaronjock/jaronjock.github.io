@@ -7,8 +7,14 @@
 </head>
 <body>
     <div id="video" class="background">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <nav id="nav-bar">
             <ul class="menu">
+                <li><p></p></li>
                 <li class="logo"><a href="index.html">Kalysta</a></li>
                 <li class="page"><a href="music.html">Music</a></li>
                 <li class="page"><a href="#">Video</a></li>
@@ -27,27 +33,16 @@
                     </a></li>
             </ul>
         </nav>
-    
+        <div class="container" onclick="changeNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <main>
-            
-            <button id="change-btn" style="width: 50px;" change-btn" onclick="changeNav()">&times;</button>
-
-        <h1>Wow!! Look at all this video of Kalysta!</h1>
-    </main>
-</div>    
+            <h1>Wow!! Look at all this video of Kalysta!</h1>
+        </main>
+    </div>    
 </body>
 
-<script>
-    var sideBar = false;
-    function changeNav() {
-        if (sideBar){
-            document.getElementById("nav-bar").style.width = "0";
-            sideBar = false;
-        }
-        else{
-            document.getElementById("nav-bar").style.width = "60%";
-            sideBar = true;
-        }
-    }  
-</script>
+<script src="scripts/side-menu.js"></script>
 </html>
