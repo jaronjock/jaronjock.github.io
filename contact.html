@@ -27,25 +27,16 @@
                     </a></li>
             </ul>
         </nav>
-    
+        <div class="container" onclick="changeNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <main>
             
-            <button id="change-btn" style="width: 50px;" change-btn" onclick="changeNav()">&times;</button>        <h1>Kally's contact info goes here!</h1>
-    </main>
+        </main>
 </div>    
 </body>
 
-<script>
-    var sideBar = false;
-    function changeNav() {
-        if (sideBar){
-            document.getElementById("nav-bar").style.width = "0";
-            sideBar = false;
-        }
-        else{
-            document.getElementById("nav-bar").style.width = "60%";
-            sideBar = true;
-        }
-    }  
-</script>
+<script src="scripts/side-menu.js"></script>
 </html>
