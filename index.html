@@ -1,43 +1,99 @@
+
+<!-- Work on about page : figure out some kind of layout -->
+<!-- get img reponsiveness figured out -->
+<!-- get this website up and running asap, dont be a perfectionist -->
+
+
+
 <!DOCTYPE html>
 <html lang="'en-US">
 <head>
     <title>Kalysta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="styles/style.css"> 
-    <link rel="stylesheet" href="styles/moblie.css"> 
+    <link rel="stylesheet" href="styles/style.css">    
+    <link rel="stylesheet" href="styles/moble-device.css">    
+    <style>      
+        img{
+            border-radius: 3em;
+            border: 3px solid #fff;
+        }
+        .video{
+            background-color: #232323;
+        } 
+
+        /* Style the button and place it in the middle of the container/image */
+        .link-tree {
+            position: relative;
+            /* top:50%;
+            left:67%; */
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index:4 ;
+        }
+        .link-tree:hover {
+            background-color: black;
+        }
+        /* .stopify-frame{
+            position:static;
+            transform: translate(-65%, -125%);
+            -ms-transform: translate(-50%, -50%);
+        } */
+    </style>
 </head>
 <body>
-    <div id="index" class="background">
+    <!--Navagation Bar-->
     <nav id="nav-bar">
+        <!--Page Links-->
         <ul class="menu">
-            <li class="logo"><a href="#">Kalysta</a></li>
-            <li class="page"><a href="music.html">Music</a></li>
-            <li class="page"><a href="video.html">Video</a></li>
-            <li class="page"><a href="contact.html">Contact</a></li>
+            <li class="page"><a href="#">About</a></li>
+            <li class="page"><a href="https://bnds.us/2v9h8y" target="_blank" rel="noopener noreferrer">Performances</a></li>
+            <li class="page"><a href="#">Press</a></li>
+            <li class="page"><a href="#">Contact</a></li>
         </ul>
-        <ul class="social-menu"> 
-            <!--Social Media Icon Links-->
+
+        <!--Social Media Icon Links-->
+        <ul class="social-menu">     
             <li class="social"><a href="https://www.instagram.com/kalystaofficial/?hl=en" target="_blank" rel="noopener noreferrer">
                 <svg id="insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2476 2476"><path d="M825.4 1238c0-227.9 184.7-412.7 412.6-412.7 227.9 0 412.7 184.8 412.7 412.7 0 227.9-184.8 412.7-412.7 412.7-227.9 0-412.6-184.8-412.6-412.7m-223.1 0c0 351.1 284.6 635.7 635.7 635.7s635.7-284.6 635.7-635.7-284.6-635.7-635.7-635.7S602.3 886.9 602.3 1238m1148-660.9c0 82 66.5 148.6 148.6 148.6 82 0 148.6-66.6 148.6-148.6s-66.5-148.5-148.6-148.5-148.6 66.5-148.6 148.5M737.8 2245.7c-120.7-5.5-186.3-25.6-229.9-42.6-57.8-22.5-99-49.3-142.4-92.6-43.3-43.3-70.2-84.5-92.6-142.3-17-43.6-37.1-109.2-42.6-229.9-6-130.5-7.2-169.7-7.2-500.3s1.3-369.7 7.2-500.3c5.5-120.7 25.7-186.2 42.6-229.9 22.5-57.8 49.3-99 92.6-142.4 43.3-43.3 84.5-70.2 142.4-92.6 43.6-17 109.2-37.1 229.9-42.6 130.5-6 169.7-7.2 500.2-7.2 330.6 0 369.7 1.3 500.3 7.2 120.7 5.5 186.2 25.7 229.9 42.6 57.8 22.4 99 49.3 142.4 92.6 43.3 43.3 70.1 84.6 92.6 142.4 17 43.6 37.1 109.2 42.6 229.9 6 130.6 7.2 169.7 7.2 500.3 0 330.5-1.2 369.7-7.2 500.3-5.5 120.7-25.7 186.3-42.6 229.9-22.5 57.8-49.3 99-92.6 142.3-43.3 43.3-84.6 70.1-142.4 92.6-43.6 17-109.2 37.1-229.9 42.6-130.5 6-169.7 7.2-500.3 7.2-330.5 0-369.7-1.2-500.2-7.2M727.6 7.5c-131.8 6-221.8 26.9-300.5 57.5-81.4 31.6-150.4 74-219.3 142.8C139 276.6 96.6 345.6 65 427.1 34.4 505.8 13.5 595.8 7.5 727.6 1.4 859.6 0 901.8 0 1238s1.4 378.4 7.5 510.4c6 131.8 26.9 221.8 57.5 300.5 31.6 81.4 73.9 150.5 142.8 219.3 68.8 68.8 137.8 111.1 219.3 142.8 78.8 30.6 168.7 51.5 300.5 57.5 132.1 6 174.2 7.5 510.4 7.5 336.3 0 378.4-1.4 510.4-7.5 131.8-6 221.8-26.9 300.5-57.5 81.4-31.7 150.4-74 219.3-142.8 68.8-68.8 111.1-137.9 142.8-219.3 30.6-78.7 51.6-168.7 57.5-300.5 6-132.1 7.4-174.2 7.4-510.4s-1.4-378.4-7.4-510.4c-6-131.8-26.9-221.8-57.5-300.5-31.7-81.4-74-150.4-142.8-219.3C2199.4 139 2130.3 96.6 2049 65c-78.8-30.6-168.8-51.6-300.5-57.5-132-6-174.2-7.5-510.4-7.5-336.3 0-378.4 1.4-510.5 7.5"/></svg>
             </a></li>
             <li class="social"><a href="https://www.facebook.com/kalystaofficial"  target="_blank" rel="noopener noreferrer" >
-                    <svg id="facebook" viewBox="126.445 2.281 589 589"  xmlns="http://www.w3.org/2000/svg"><circle cx="420.945" cy="296.781"  r="294.5"/><path d="m516.704 92.677h-65.239c-38.715 0-81.777 16.283-81.777 72.402.189 19.554 0 38.281 0 59.357h-44.788v71.271h46.174v205.177h84.847v-206.531h56.002l5.067-70.117h-62.531s.14-31.191 0-40.249c0-22.177 23.076-20.907 24.464-20.907 10.981 0 32.332.032 37.813 0v-70.403z" fill="#000"/></svg>
-                </a></li>         
+                <svg id="facebook" viewBox="126.445 2.281 589 589"  xmlns="http://www.w3.org/2000/svg"><circle cx="420.945" cy="296.781"  r="294.5"/><path d="m516.704 92.677h-65.239c-38.715 0-81.777 16.283-81.777 72.402.189 19.554 0 38.281 0 59.357h-44.788v71.271h46.174v205.177h84.847v-206.531h56.002l5.067-70.117h-62.531s.14-31.191 0-40.249c0-22.177 23.076-20.907 24.464-20.907 10.981 0 32.332.032 37.813 0v-70.403z" fill="#fff"/></svg>
+            </a></li>         
             <li class="social"><a href="https://open.spotify.com/artist/6TcQeG7O7bXOQyu2DKKv8G" target="_blank" rel="noopener noreferrer">
-                    <svg id="spotify" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2931 2931"height="50"><path class="st0" d="M1465.5 0C656.1 0 0 656.1 0 1465.5S656.1 2931 1465.5 2931 2931 2274.9 2931 1465.5C2931 656.2 2274.9.1 1465.5 0zm672.1 2113.6c-26.3 43.2-82.6 56.7-125.6 30.4-344.1-210.3-777.3-257.8-1287.4-141.3-49.2 11.3-98.2-19.5-109.4-68.7-11.3-49.2 19.4-98.2 68.7-109.4C1242.1 1697.1 1721 1752 2107.3 1988c43 26.5 56.7 82.6 30.3 125.6zm179.3-398.9c-33.1 53.8-103.5 70.6-157.2 37.6-393.8-242.1-994.4-312.2-1460.3-170.8-60.4 18.3-124.2-15.8-142.6-76.1-18.2-60.4 15.9-124.1 76.2-142.5 532.2-161.5 1193.9-83.3 1646.2 194.7 53.8 33.1 70.8 103.4 37.7 157.1zm15.4-415.6c-472.4-280.5-1251.6-306.3-1702.6-169.5-72.4 22-149-18.9-170.9-91.3-21.9-72.4 18.9-149 91.4-171 517.7-157.1 1378.2-126.8 1922 196 65.1 38.7 86.5 122.8 47.9 187.8-38.5 65.2-122.8 86.7-187.8 48z"/></svg>
-                </a></li>
+                <svg id="spotify" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2931 2931"height="50"><path class="st0" d="M1465.5 0C656.1 0 0 656.1 0 1465.5S656.1 2931 1465.5 2931 2931 2274.9 2931 1465.5C2931 656.2 2274.9.1 1465.5 0zm672.1 2113.6c-26.3 43.2-82.6 56.7-125.6 30.4-344.1-210.3-777.3-257.8-1287.4-141.3-49.2 11.3-98.2-19.5-109.4-68.7-11.3-49.2 19.4-98.2 68.7-109.4C1242.1 1697.1 1721 1752 2107.3 1988c43 26.5 56.7 82.6 30.3 125.6zm179.3-398.9c-33.1 53.8-103.5 70.6-157.2 37.6-393.8-242.1-994.4-312.2-1460.3-170.8-60.4 18.3-124.2-15.8-142.6-76.1-18.2-60.4 15.9-124.1 76.2-142.5 532.2-161.5 1193.9-83.3 1646.2 194.7 53.8 33.1 70.8 103.4 37.7 157.1zm15.4-415.6c-472.4-280.5-1251.6-306.3-1702.6-169.5-72.4 22-149-18.9-170.9-91.3-21.9-72.4 18.9-149 91.4-171 517.7-157.1 1378.2-126.8 1922 196 65.1 38.7 86.5 122.8 47.9 187.8-38.5 65.2-122.8 86.7-187.8 48z"/></svg>
+            </a></li>
+            <li class="social"><a href="https://open.spotify.com/artist/6TcQeG7O7bXOQyu2DKKv8G" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" ><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"/></svg>
+            </a></li>
         </ul>
     </nav>
-    <div class="container" onclick="changeNav(this)">
+    <div id="menu-opener" onclick="changeNav(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
     </div>
-    <main>
-        <h1>Welcome to the Offical Kalysta Page!</h1>
-    </main>
-</div>    
+    <section>
+        <img id="main-img"  alt="kally">
+        <a href="https://linktr.ee/kalystaofficial" target="_blank" rel="noopener noreferrer">
+            <button class="link-tree">Stream</button>
+        </a> 
+    </section>
+  <!--
+     <section>
+        <header><h1>Music</h1></header>
+        <img src="images/kally-studio.webp" alt="kally">
+        <iframe class="stopify-frame" style="border-radius:12px" src="https://open.spotify.com/embed/artist/6TcQeG7O7bXOQyu2DKKv8G?utm_source=generator&theme=0" width="30%" height="425" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+   <section class="video">
+        <header><h1 style="color:white">Video</h1></header>
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/sUKINuplXEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>  -->
 </body>
-
 <script src="scripts/navBar.js"></script>
+<script src="scripts/image.js"></script>
 </html>
