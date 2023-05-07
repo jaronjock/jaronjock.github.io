@@ -1,102 +1,84 @@
 *{
     box-sizing: border-box;
     padding:0;
-    margin:0;
+    margin:0;  
 }
-
-.container{
-    visibility: hidden;
+html{
+    height: 100%;
 }
-
-.background{
-    background-color: black;
+body{
     font-family: sans-serif;
-    font-size:16px;
-    max-width: 100%;
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-    color :white;
-    display: grid;
-    place-items:center;
-    align-content: center;  
+    font-size: 1em;
+    background-color: rgb(246, 246, 240);
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    height: 100%;
 }
-
-#index{
-    background-image:url("../images/kally-singing.webp");
-}
-#music{
-    background-image:url("../images/kally-tam.webp");
-}
-#video{
-    background-image:url("../images/kally.webp");
-}
-#contact{
-    background-image:url("../images/kally-full-band.webp");
-}
-
-#nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow:hidden;
-    background-color: black;
-    padding: 10px 25px;
-    position:fixed;
-    top:0;
+nav{ 
     width: 100%;
-    text-align: center;
-}
+    top:0;
+    position: fixed;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-areas: 'a b';
+    visibility: visible;
+    z-index:5;
+    padding: 1.5em;
+    /* background-color: rgb(241, 240, 246); */
 
-#nav-bar ul{
-    list-style-type: none;
+    
 }
-
-.menu li{
+ul{
+    list-style-type: none; 
+}
+li{
     display: inline;
+    font-weight: bold;      
 }
-
-.social-menu li{
-    display: inline;
+svg{
+    height:1.4em;
 }
-
- #nav-bar a{
-    color:white;
+a{
     text-decoration: none;
+    color:black;
 } 
-
-.logo a{  
-    padding-right: 35px;
-    font-weight: bold;
-    font-size: 2em;
+.logo{
+    font-size:x-large;
+    padding-inline: 1em;
 }
 
+.menu{
+    padding-inline: 1.5em;
+}
 .page{
-    text-decoration: underline 0.10em rgba(255, 255, 255, 0);
+    font-size: 1.4em;
+    padding: .5em;
+    text-decoration: underline 0.10em rgba(0,0,0,0);
     transition: text-decoration-color 300ms;
-    font-size: 1.8em;
-    padding: 0 8px;
 }
-
 .page:hover{
-    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-color: rgba(0,0,0,100);
+}
+.social-menu{
+    padding-inline: .5em;
+}
+.social{
+    padding:.4em;
+}
+.social svg:hover{
+    opacity: 50%;
 }
 
-.active-link{
-    text-decoration: underline 0.10em rgba(255, 255, 255, 255);
-    font-size: 1.8em;
-    padding: 0 8px;
-}
+section{
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    place-items: center;
+    /* place-content: space-evenly; */
+    /* grid-template-areas: 'a b'; */
+}  
 
-.social a{
-    padding: 5px;
-    fill: white;  
-}
 
-.social svg{
-    height: 1.8em;
-}
-
-.social a:hover{
-    fill:rgb(163, 56, 230);
+main-img{
+    margin-top: 2em;
 }
